@@ -1,0 +1,315 @@
+@charset "utf-8";
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul{list-style-type: none;}
+img{max-width: 100%; vertical-align: middle;}
+table{border-collapse: collapse;}
+button{border:none; background: none; cursor:pointer; font-size:inherit;}
+
+.row{width: 960px; margin: 0 auto;}
+body{
+    font-size: 16px; font-family: '나눔고딕';
+} /* 바디에서는 line-height에 em을 쓰지 않는다 */
+#nav{
+    background: #85665c;
+    position: fixed;
+    width:100%;
+    z-index: 99;
+    top:0%;
+    left:0%;
+}
+#nav .depth1{
+    overflow: hidden; 
+}
+#nav .depth1 li{
+    float: left;
+    width: 20%;
+    text-align: center;    
+    color: #fff;
+    border: 2px solid transparent; /* 선을 투명하게 해서 배경색이 보이게 */
+}
+#nav .depth1 li a{
+    display: inline-block;
+    padding: 22px 0px;
+}
+#nav .depth1 li:hover{
+    border-bottom:2px solid #fff;
+}
+#header{
+    background: url(../images/header_bg.gif) no-repeat center;
+    background-size:cover;
+    height: 600px; 
+    position: relative;
+    margin-top:66px;  
+}
+.header_text{
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333
+}
+.header_text h1 p{
+    font-size: 48px;
+    font-family: '나눔명조';
+    font-weight: lighter;
+    padding: 25px 0px 5px 0px;
+}
+.header_text > p{
+    font-size: 22.4px;
+}  
+#section{
+    background: url(../images/bg.jpg) repeat;
+    position:relative;
+}
+
+#section > div{
+    padding: 48px 0px;
+}
+#section h2{
+    font-size: 48px;
+    font-family: '나눔명조';
+    font-weight: lighter;
+    text-align: center;
+    color: #85665c;
+    padding-bottom: 20px;
+}
+#section > .article6{
+    padding: 0px;
+}
+.article1{
+    position:relative;
+}
+.main_food{
+    position: relative;
+    text-align: center;
+    margin-top:-188px;
+}
+.article1 ul{
+    display: table; /* 여백 없이 퍼센트로 채우고 싶으면 부모를 display:table 자식을 display:table-cell로 설정해준다 */
+    width:100%; 
+    color:#666;
+    margin-top: 10px;
+} 
+.article1 ul > li{
+    display:table-cell; 
+    width:25%;
+    text-align: center;
+    padding:0 15px;
+    
+}
+.article1 h3{
+    font-size: 25.6px;
+    font-family: '나눔명조';
+    color: #85665c;
+    margin: 40px 0px 10px 0px;
+}
+.article1 p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5em;
+}
+
+.article1 ul > li > img{
+    height: 97px;
+}
+.article2, .article3{
+    text-align: center;
+    line-height: 1.5em;
+}
+.article2 ul{overflow: hidden;  /* float의 오류를 잡아주기 위한 태그. 블록 성격의 자식들을 한줄로 정렬하기 위해 float 속성을 사용하면 부모의 높이가 사라지는 부작용이 생긴다. 이것을 해결하기 위해 부모 요소에게 overflow:hidden 속성을 준다 */
+    padding-top: 40px;
+}
+.article2 ul li{
+    float:left;
+    width:25%;
+    padding: 10px 10px;
+}
+.chef img{
+    width:110px;
+    height:110px;
+    margin: 50px 0px 40px 0px;
+}
+.chef strong{
+    display:block;
+    font-size: 28.8px;
+    font-family: '나눔명조';
+    color: #404040;
+    font-weight: lighter;
+}
+.chef p{
+    color:#85665c;
+    margin-top:40px;
+}
+.article4{
+    text-align: center;
+}
+.article4 table{
+    width:100%;
+    margin:40px 0px;
+}
+/* .menu_name{
+    font-size: 25.6px;
+    color: #85665c;
+    padding:20px 0px 5px 0px;
+    text-align: left;
+}
+.menu_name strong{
+    font-weight: normal;
+}
+.price{
+    font-size: 22.4px;
+    color:#404040;
+    font-weight: bold;
+    text-align: right;
+}
+.menu_explain{
+    color: #404040;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.menu_name, .price{
+    border-top: 1px solid #ccc;
+}
+.btn{
+    display:inline-block;
+    background: #85665c;
+    border-radius: 50px;    
+    margin-top: 15px;
+} */
+    
+.article4 td{
+    border-bottom:1px solid #85665c;
+    padding:15px 0px;
+    color:#404040;
+}
+.article4 td:nth-child(2){
+    text-align: right;
+    font-size: 22.4px;
+}
+.article4 td:nth-child(1){
+    text-align: left
+}
+.article4 td:nth-child(1) strong{
+    font-size: 25.6px;
+    color: #85665c;
+    font-weight: normal; 
+}
+.article4 td:nth-child(1) p{
+    padding-top:5px;
+}
+.article4 tr:last-child td{
+    border-bottom:none;
+}
+
+.btn a{
+    margin-top:25px;
+    display:inline-block;
+    width:175.2px;
+    height:64px;
+    line-height: 64px;
+    border-radius: 50px;
+    background: #85665c;
+    color: #fff;
+}
+
+/* .article4 .btn button{
+    width:175.2px;
+    height:64px;
+    border-radius: 50px;
+    background: #85665c;
+    color: #fff;
+    font-family: '나눔고딕';
+} */
+
+#detail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right : 0; /* 전방향 0은 width, height 100퍼센트와 같다 */
+    background:rgba(0, 0, 0, 0.5);
+    z-index:999;
+    display:none;
+}
+#detail:target{
+    display:block;
+}
+.detailcont{
+    position: absolute;
+    width:400px;
+    background: #fff;
+    color:#000;
+    padding:20px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.detailcont .close{
+    display: block;
+    width: 80px;
+    background: red;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto 0px;
+}
+.article5{
+    overflow: hidden; /* 자식 속성이 float 기능을 사용해서 벗어났을 때 부모 속성에다 overflow: hidden을 작성해준다 */
+}
+.article5 div{
+    margin-top:20px;
+}
+.article5 .info{
+    float:left;
+    width:50%; 
+}
+.article5 .map{
+    float:right;
+    width:50%
+}
+.info pre{   
+    font-family:inherit;
+    line-height: 1.5em;
+    margin-top:5px;
+}
+.article6 {
+    background: #85665c;
+    color:#f4ba8e;
+    font-size: 32px;
+    text-align: center;
+    font-family: '나눔명조';
+}
+.article6 div{
+    padding: 45px 0px;    
+}
+.article6 a{
+    color: #fff;
+    padding-left: 20px;
+}
+.article6 img{
+    width: 100%;
+}
+#footer{
+    background: #85665c;
+    color: #fff;
+    font-family: '나눔명조';
+    text-align: center;
+    padding:80px 0px 30px 0px;
+}
+.gotop{
+    position: fixed;
+    right:50px;
+    bottom:50px;
+    width:100px;
+    height:100px;
+    background: #000;
+    color:#fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* li+li : li의 동생들을 계속해서 지목. 첫번째 li를 제외하고 전부 지목되게 된다 */
