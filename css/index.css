@@ -59,6 +59,9 @@ body{
 .header_text > p{
     font-size: 22.4px;
 }  
+#ourgallery, #aboutus, #chefmenu, #roadmap, #reservation{
+    padding-top: 110px !important;
+}
 #section{
     background: url(../images/bg.jpg) repeat;
     position:relative;
